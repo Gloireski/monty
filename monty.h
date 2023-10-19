@@ -1,5 +1,6 @@
 #ifndef _MONTY 
 #define _MONTY
+#define  _GNU_SOURCE
 
 #include <stdio.h>
 #include <stdlib.h>
