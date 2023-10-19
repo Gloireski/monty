@@ -1,7 +1,6 @@
-#ifndef _MONTY 
-#define _MONTY
+#ifndef _MONTY_
+#define _MONTY_
 #define  _GNU_SOURCE
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -38,7 +37,7 @@ typedef struct stack_s
  */
 typedef struct instruction_s
 {
-        char *opcode;
+	char *opcode;
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
@@ -61,7 +60,6 @@ void pchar(stack_t **stack, unsigned int line_number);
 void pstr(stack_t **stack, unsigned int line_number);
 void rotl(stack_t **stack, unsigned int line_number);
 void rotr(stack_t **stack, unsigned int line_number);
-
 /**
  * struct GlobalStruct - contains all globals
  * @data: int for push
@@ -75,4 +73,4 @@ struct GlobalStruct
 	char *lineptr;
 } globes;
 
-#endif /* _MONTY */ 
+#endif /* _MONTY */
