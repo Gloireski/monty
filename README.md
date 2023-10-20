@@ -11,3 +11,4 @@ $ gcc -Wall -Werror -Wextra -pedantic -std=c89 *.c -o monty
 # Example of usage
 # Author:
 - Bekoutou Belem Gloire
+- Leslie Moonsamy
