@@ -72,5 +72,4 @@ struct GlobalStruct
 	FILE *fm;
 	char *lineptr;
 } globes;
-extern globes globes;
 #endif /* _MONTY */
