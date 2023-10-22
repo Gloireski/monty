@@ -46,18 +46,18 @@ void pall(stack_t **stack, unsigned int line_number)
 /**
  * pint - print top int
  * @stack: stack
- * @line_number: line number in monty .m file
- * Return: void
+ * @counter: line_number
+ * Return: no return
  */
-void pint(stack_t **stack, unsigned int line_number)
+void pint(stack_t **head, unsigned int counter)
 {
-	stack_t *tmp = *stack;
-
-	if (tmp == NULL)
+	if (*head == NULL)
 	{
-		fprintf(stderr, "L%d: can't pint, stack empty", line_number);
-		exit_free(*stack);
+		fprintf(stderr, "L%u: can't pint, stack empty\n", counter);
+		fclose(bus.file);
+		free(bus.content);
+		free_stack(*head);
 		exit(EXIT_FAILURE);
 	}
-	printf("%d\n", tmp->n);
+	printf("%d\n", (*head)->n);
 }
