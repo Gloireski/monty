@@ -46,7 +46,7 @@ void pall(stack_t **stack, unsigned int line_number)
 /**
  * pint - print top int
  * @stack: stack
- * @counter: line_number
+ * @line_number: line number
  * Return: no return
  */
 void pint(stack_t **stack, unsigned int line_number)
