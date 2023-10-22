@@ -16,7 +16,7 @@ void opcomp(stack_t **stack, unsigned int line_number, char *opcode)
 		{"swap", swap}, {"add", add},
 		{"nop", nop}, {"sub", sub},
 		{"div", divide}, {"mul", mul},
-		{"mod", mod}, {"pchar", pchar},
+		{"mod", mod}, {NULL, NULL},
 	};
 
 	while (opc[index].opcode != NULL)
